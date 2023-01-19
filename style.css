@@ -1,0 +1,417 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+    @font-face {
+      font-family: "Russo One";
+      src: url(fonts/RussoOne-Regular.woff);
+      font-style: normal;
+    }
+    @font-face {
+        font-family: 'Muller';
+        src: url('MullerBold.eot');
+        src: local('Muller Bold'), local('MullerBold'),
+            url('./fonts/MullerBold.eot') format('embedded-opentype'),
+            url('./fonts/MullerBold.woff2') format('woff2'),
+            url('./fonts/MullerBold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Muller';
+        src: url('MullerRegular.eot');
+        src: local('Muller Regular'), local('MullerRegular'),
+            url('./fonts/MullerRegular.eot') format('embedded-opentype'),
+            url('./fonts/MullerRegular.woff2') format('woff2'),
+            url('./fonts/MullerRegular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    h1, h2, h3 {
+        font-family: "Russo One";
+    }
+    
+    p, a {
+        font-family: Muller;
+        font-weight: normal;
+    }
+    
+    
+    .first-screen {
+        margin: 0 auto;
+        max-width: 100%;
+        height: 800px;
+        background-image:url(img/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .header {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1150px;
+        height: 100px;    
+    }
+    
+    .header__logo {
+        display: flex;
+        width: 270px;
+        height: 58px;
+        align-items: center;
+    }
+    .header__foto img {
+        margin: 0px -10px;
+        display: flex;
+    }
+    
+    .header__row p {
+        padding: 0px 10px;
+        flex-grow: 3;
+        color: #46b1de;
+        font-size: 20px;
+        height: 90%;
+        width: 70%;
+        display: flex;
+    }
+    
+    .header__menu {
+        display: flex;
+        margin: 0px -15px;
+        width: 300px;
+    }
+    
+    .menu__link  {
+        padding: 0px 15px;
+        flex: 0 1 33,333%;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 17px;
+        text-align: center;
+        color: black;
+       
+    }
+    
+    .header__phone {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .phone__link a {
+        color: black;
+    }
+    .phone__link  {
+        padding: 0px 15px;
+       
+    }
+    
+    .caption {
+        padding: 200px 0px 20px 0px;
+        margin: 0 auto;
+        text-align: left;
+        width: 1150px;
+       
+    }
+    
+    .title h1 {
+        font-size: 40px;
+        margin: 0px;
+        text-transform: uppercase;
+        width: 500px;
+    }
+    
+    .title h2 {
+        margin: 0px;
+        font-size: 40px;
+        color: #46b1de;
+        text-transform: uppercase;
+    }
+    
+    .title p {
+        width: 500px;
+        margin: 0px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .button {
+        margin: 0 auto;
+        text-align: left;
+        width: 1150px;
+        padding: 20px 0px 0px 0px;
+    }
+    
+    .button__one {
+        border: solid black 1px;
+        text-decoration: none;
+        margin: 0px 100px 0px 20px;
+        font-size: 20px;
+        padding: 15px 50px;
+        background-color: #46b1de;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    .button__two {
+        border: solid black 1px;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 15px 30px;
+        color: #46b1de;
+        background-color: white;
+        text-transform: uppercase;
+    }
+    
+    .foto__lady {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        width: 1150px;
+
+    }
+
+    .foto__lady img {
+       
+        height: 500px;
+        width: 500px;
+        position: absolute;
+         top: 295px;
+    }
+    
+    .content {
+        margin: 0 auto;
+        margin-top: -45px;
+    }
+    
+    .blok {
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 250px);  
+        gap: 40px;
+        height: 97px;
+        width: 1150px;
+        display: grid;
+        justify-content: center; 
+    }
+    
+    .blok_1 {
+        border-radius: 8px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        width: 250px;
+        height: 90px;
+        background-color: white;
+        box-shadow:-1px 0px 6px 0px;
+    }
+    
+    .blok_1 span{
+        margin: 13px 10px 5px 5px;
+        text-align: left;    
+        color: #46b1de;
+        font-size: 60px;
+        font-family: "Muller";
+        font-weight: bold;
+    }
+    
+    .blok_1 p  {  
+        text-align: left;
+    }
+    
+    .cards {
+        padding-bottom: 50px;
+        width: 1150px;
+        margin: 0 auto;
+    }
+
+     .cards__title {
+        margin: 0 auto;
+        max-width: 550px;
+        text-align: center;
+        padding: 60px 0px 20px 0px;
+    }
+    
+    .cards__title span {
+        font-weight: 700;
+        color: #46b1de;
+    }
+    
+    .cards__title h2 {
+        font-size: 30px;
+    }
+       
+    .numbered__cards {  
+        border-radius: 10px;
+        margin: 0 auto;
+        padding-top: 10px;
+        min-height: 330px;
+        max-height: 1150px;
+        max-width: 900px;
+        min-width: 285px ;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; 
+        background-color: #46b1de;
+    }
+    .cards_1 {
+        height: 180px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        background-color: white;
+        max-width: 276px;
+        min-height: 100px;
+    }
+    
+    .cards__text h4, span {
+        font-family: "Muller";
+        font-weight: bold;
+    }
+    .cards__text h4  {
+        margin-left: 5px;
+        width: 70%;
+        text-align: left;
+        color: #46b1de;
+    }
+    
+    .cards__text span {
+        text-align: center;
+        color: #46b1de;
+        font-size: 40px; 
+    }
+    .cards__text {
+       
+        margin-bottom: 40px;
+        margin-right: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards_1 p {
+        text-align: left;
+        margin: -19px 20px 6px 20px; 
+    }
+    
+    
+    .footer {
+        width: 1150px;
+        margin: 0 auto;
+        height: 250px;
+        padding: 15px 100px 5px 5px;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(to right, #a5d5e2, #2376dc);
+    }
+    
+    .footer__info_2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    .footer__logo {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        width: 250px;
+        font-size: 18px;
+    }
+    .footer__logo p{
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .footer__logo img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .working p, h4 {
+        margin: 5px;  
+    }
+    
+    .working {
+        margin-left: 140px;
+    }
+    
+    .footer__link li {
+        list-style: none;
+        margin-top: 20px;
+    
+    }
+    .footer__link a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .contacts__addressa {
+        margin-top: 30px;
+        line-height: 20px;
+        color: white;
+    }
+
+    .contacts__addressa h2 {
+       font-size: 20px;
+    }
+    
+    .phone_2 {
+        margin: 10px 0px 10px 0px;
+        align-items: center;
+        display: flex;
+    }
+    
+    .phone_2 a{
+        color: white;
+        text-decoration: none;
+        padding-left: 8px;
+    }
+    
+    .contacts div {
+        margin: 0px 90px 5px 0px ;
+    }
+    
+    .mesenger {
+        margin-top: 10px;
+        display:flex ;
+        width: 130px;
+        justify-content: space-between;
+    }
+    
+    .qqq {
+        text-align: end;
+    }
